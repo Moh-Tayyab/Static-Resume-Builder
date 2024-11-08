@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Muhammad Tayyab - Resume</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap"
+      rel="stylesheet" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <!-- Sidebar -->
+      <aside class="sidebar">
+        <img
+          src="/image/new-profile.jpg"
+          alt="Profile Image"
+          class="profile-image" />
+        <h2>Muhammad Tayyab</h2>
+        <p class="title">Frontend Developer</p>
+
+        <div class="section about">
+          <h3><i class="fas fa-user"></i> About Me</h3>
+          <p>
+            Hello! I’m a dedicated Front-End Developer and passionate
+            problem-solver. Are you looking to enhance your front-end
+            development, optimize your website, or boost application
+            performance? I'm here to assist! I am also keen to expand my skills
+            further in the field of AI for continuous growth and innovation.
+          </p>
+        </div>
+
+        <div class="section contact">
+          <h3><i class="fas fa-address-book"></i> Contact Info</h3>
+          <p><i class="fas fa-phone"></i> +923421018093</p>
+          <p><i class="fas fa-envelope"></i> m.tayyab1263@gmail.com</p>
+          <p><i class="fas fa-map-marker-alt"></i> Karachi, Pakistan</p>
+        </div>
+
+        <div class="section skills">
+          <h3><i class="fas fa-star"></i> Skills</h3>
+          <button onclick="toggleSkills()" class="toggle-skills-btn">
+            Show/Hide Skills
+          </button>
+          <div id="skillsContent" style="display: none">
+            <div class="skill">
+              <span>HTML</span>
+              <div class="progress-bar">
+                <div class="progress" style="width: 90%"></div>
+              </div>
+            </div>
+            <div class="skill">
+              <span>CSS</span>
+              <div class="progress-bar">
+                <div class="progress" style="width: 68%"></div>
+              </div>
+            </div>
+            <div class="skill">
+              <span>JavaScript</span>
+              <div class="progress-bar">
+                <div class="progress" style="width: 80%"></div>
+              </div>
+            </div>
+            <div class="skill">
+              <span>TypeScript</span>
+              <div class="progress-bar">
+                <div class="progress" style="width: 85%"></div>
+              </div>
+            </div>
+            <div class="skill">
+              <span>Next.js</span>
+              <div class="progress-bar">
+                <div class="progress" style="width: 70%"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </aside>
+
+      <!-- Main Content -->
+      <main class="main-content">
+        <section class="education">
+          <h3><i class="fas fa-graduation-cap"></i> Education</h3>
+          <div class="content">
+            <p>
+              <strong>Matriculation (2020)</strong><br />Govt Higher Secondary
+              School
+            </p>
+            <p><strong>Intermediate (2022)</strong><br />Aspire College</p>
+            <p>
+              <strong>Certified Agentic AI Developement Stack (2024)</strong
+              ><br />Governor Sindh Initiative for Cloud Applied GenAI
+            </p>
+          </div>
+        </section>
+
+        <section class="experience">
+          <h3><i class="fas fa-briefcase"></i> Work Experience</h3>
+          <div class="content-card">
+            <p>
+              <strong>Frontend Developer</strong><br />Governor Sindh IT
+              Initiative Cloud (GIAIC) - February 2024
+            </p>
+            <ul>
+              <li>
+                Developed responsive user interfaces utilizing HTML, CSS,
+                JavaScript, TypeScript, and Next.js.
+              </li>
+              <li>
+                Conducted code reviews to maintain high standards in coding
+                quality and performance.
+              </li>
+              <li>
+                Collaborated with cross-functional teams to deliver projects on
+                time and within budget.
+              </li>
+              <li>
+                Utilized Next.js for SEO optimization and performance
+                improvements, ensuring collaborative documentation.
+              </li>
+              <li>
+                Worked closely with the development team to ensure seamless
+                integration of AI solutions into the existing infrastructure.
+              </li>
+            </ul>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <script>
+      function toggleSkills() {
+        const skillsContent = document.getElementById("skillsContent");
+        skillsContent.style.display =
+          skillsContent.style.display === "none" ? "block" : "none";
+      }
+    </script>
+  </body>
+</html>
